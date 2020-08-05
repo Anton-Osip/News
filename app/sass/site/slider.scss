@@ -1,0 +1,75 @@
+.slider{
+     &__slid{
+          background: url(../../../img/hotel.jpg)no-repeat center center/cover;
+          text-align: center;
+          padding: 62px 0 40px;
+     }
+     &__btn{
+          @include font(400, 12px, 14px,$font-family);
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: $white;
+          background-color: $btn-color;
+          padding: 4px 15px 5px;
+          cursor: pointer;
+          border: none;
+          outline: none  ;
+          margin-bottom: 50px;
+     }
+     &__title{
+          text-transform: uppercase;
+          color: $white;
+          letter-spacing: 2px;
+          @include font(300, 72px, 85px,$font-family);
+          margin-bottom: 42px;
+     }
+     &__text{
+          max-width: 460px;
+          @include font(300, 14px, 150%,$font-family);
+          color: $white;
+          margin: 0 auto;
+     }
+     &__control{
+          color: $white;
+          display: flex;
+          @include font(400, 13px, 15px,$font-family);
+          margin-bottom: 55px;
+          cursor: pointer;
+     }
+     &__prev{
+          height: 42px;
+          width: 50%;
+          border-right: 1px solid $white;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &--text::after{
+               content:'';
+               width: 52px;
+               height: 1px;
+               background-color: $white;
+               display: inline-block;
+               margin-bottom: 3px;
+               margin-right: 10px;     
+          }
+     }
+     &__next{
+          height: 42px;
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &--text::before{
+               content:'';
+               width: 52px;
+               height: 1px;
+               background-color: $white;
+               display: inline-block;
+               margin-bottom: 3px;
+               margin-left: 10px;     
+          }
+     }
+}
+.swiper-pagination{
+     display: none;
+}
