@@ -1,0 +1,21 @@
+.header{
+     padding: 60px 0 40px;
+     &__title{
+          @include font(900,35px, 47px,$bold-family);
+          text-align: center;
+          margin-bottom: 40px;
+     }
+     &__list{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          list-style: none;
+     }
+     &__link{
+          @include font(400,15px, 30px,$font-family);
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          display: block;
+          color:$black;
+     }
+}
