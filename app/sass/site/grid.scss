@@ -1,0 +1,24 @@
+  @for $i from 1 through $columns {
+      .col-#{$i} {
+          width: (100 / ($columns / $i)) * 1%;
+      }
+  }
+  
+  [class*="col-"] {
+      padding-left: $gutters / 2;
+      padding-right: $gutters / 2;
+  }
+  
+  .container {
+      max-width: $container-width;
+      padding-left: $gutters / 2;
+      padding-right: $gutters / 2;
+      margin: 0 auto;
+  }
+  
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -$gutters / 2;
+      margin-left: -$gutters / 2;
+  }
