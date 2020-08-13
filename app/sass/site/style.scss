@@ -1,7 +1,18 @@
 * {
     margin: 0;
     padding: 0;
+
+}
+
+:root{
     box-sizing: border-box;
+    font-size: calc(.1rem + 1vw);
+}
+
+*,
+::after,
+::before{
+    box-sizing:inherit;
 }
 
 a {
@@ -14,4 +25,20 @@ img {
 body {
     font-family: $font-family;
     color: #000;
+}
+
+.title{
+    @include font(900,1.06rem, 1.17em,$font-family);
+    margin-bottom: 0.88em;
+    text-transform: uppercase;
+}
+
+@media(max-width:540px){
+    :root{
+        font-size: calc(0.7rem + 1vw);
+    }
+    .title{
+        @include font(900,17px, 28px,$font-family);
+        margin-bottom: 16px;
+    }
 }

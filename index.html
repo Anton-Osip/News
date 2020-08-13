@@ -4,7 +4,7 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+     <title>Новости культуры</title>
      <!-- Fonts -->
      <!-- Playfair Display -->
      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
@@ -19,11 +19,20 @@
 </head>
 
 <body>
+
      <header class="header">
+
+          <a class="menu">
+               <div class="menu__line"></div>
+               <div class="menu__line"></div>
+               <div class="menu__line"></div>
+          </a>
+
           <div class="container">
                <h1 class="header__title">Новости культуры</h1>
                <nav class="header__nav">
                     <ul class="header__list">
+                         <li class="header__item--cross"><a href="#" class=" header__link--cross"></a></li>
                          <li class="header__item"><a href="#" class="header__link">новости</a></li>
                          <li class="header__item"><a href="#" class="header__link">обзоры</a></li>
                          <li class="header__item"><a href="#" class="header__link">музыка</a></li>
@@ -35,14 +44,12 @@
                          <li class="header__item"><a href="#" class="header__link">живопись</a></li>
                     </ul>
                </nav>
-               <!--/.header__nav -->
           </div>
      </header>
-     <!-- /.header -->
+
      <section class="slider">
           <div class="swiper-container">
                <div class="swiper-wrapper">
-                    <!-- Slides -->
                     <div class="swiper-slide slider__slid">
                          <div class="container">
                               <button class="slider__btn">новое</button>
@@ -66,7 +73,6 @@
                                    построенный на нефти и за счет нефти</p>
                          </div>
                     </div>
-                    <!-- slid -->
                     <div class="swiper-slide slider__slid">
                          <div class="container">
                               <button class="slider__btn">новое</button>
@@ -90,7 +96,6 @@
                                    построенный на нефти и за счет нефти</p>
                          </div>
                     </div>
-                    <!-- slid -->
                     <div class="swiper-slide slider__slid">
                          <div class="container">
                               <button class="slider__btn">новое</button>
@@ -114,7 +119,6 @@
                                    построенный на нефти и за счет нефти</p>
                          </div>
                     </div>
-                    <!-- slid -->
                     <div class="swiper-slide slider__slid">
                          <div class="container">
                               <button class="slider__btn">новое</button>
@@ -138,7 +142,6 @@
                                    построенный на нефти и за счет нефти</p>
                          </div>
                     </div>
-                    <!-- slid -->
                     <div class="swiper-slide slider__slid">
                          <div class="container">
                               <button class="slider__btn">новое</button>
@@ -162,27 +165,321 @@
                                    построенный на нефти и за счет нефти</p>
                          </div>
                     </div>
-                    <!-- slid -->
                </div>
-               <!-- If we need pagination -->
                <div class="swiper-pagination"></div>
           </div>
      </section>
-     <!-- /.slider -->
-     <article class="article">
-          <div class="container">
+
+     <main class="main__content">
+          <div class="container main__container">
                <div class="row">
-                    <div class="col-lg-8">
-                         <h3 class="articl__news">Новости</h3>
-                         <div class="row">
-                              <div class="col-lg-8"></div>
-                              <div class="col-lg-4"></div>
-                         </div>
+                    <div class=" col-sm-8 col-12">
+                         <article class="row news">
+                              <h2 class=" title  col-sm-12 ">Новости</h2>
+                              <div class=" col-sm-7 col-12">
+                                   <div class="main-news"
+                                        style=" background: url(img/cultur-news.jpg)no-repeat center center/cover;">
+                                        <h3 class="main-news__title main-news__title--light">
+                                             Новости культуры России и всего мира
+                                        </h3>
+                                        <p class="main-news__text main-news__text--light">
+                                             В минувшие выходные в Москве на фестивале «Оберег»
+                                             вручили первую премию Russian World Music Awards
+                                        </p>
+                                   </div>
+                              </div>
+                              <div class=" col-sm-5 col-12">
+                                   <div class="secondary-news">
+                                        <div class="secondary-news__img-box">
+                                             <img src="img/secondary-news1.jpg" alt="secondary-news"
+                                                  class="secondary-news__img">
+                                        </div>
+                                        <div class="secondary-news__info">
+                                             <h3 class="secondary-news__title">
+                                                  Открытие нового памятника Евгению Леонову
+                                             </h3>
+                                             <p class="secondary-news__text">
+                                                  10 сентября в 15:00 был открыт памятник писателю
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="secondary-news">
+                                        <div class="secondary-news__img-box">
+                                             <img src="img/secondary-news2.jpg" alt="secondary-news"
+                                                  class="secondary-news__img">
+                                        </div>
+                                        <div class="secondary-news__info">
+                                             <h3 class="secondary-news__title">
+                                                  Беседы с писателями
+                                             </h3>
+                                             <p class="secondary-news__text">
+                                                  Русские писатели говорят о важности искусства
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="secondary-news">
+                                        <div class="secondary-news__img-box">
+                                             <img src="img/secondary-news3.jpg" alt="secondary-news"
+                                                  class="secondary-news__img">
+                                        </div>
+                                        <div class="secondary-news__info">
+                                             <h3 class="secondary-news__title">
+                                                  День и ночь св. Патрика: встреча старых друзей
+                                             </h3>
+                                             <p class="secondary-news__text">
+                                                  Не Джойсом единым живет Ирландия!
+                                             </p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </article>
+
+                         <article class="row surveys">
+                              <h2 class=" title  col-sm-12">Обзоры</h2>
+                              <a href="#" class="col-sm-6 surveys__item">
+                                   <div class="surveys__img-box">
+                                        <img src="img/surveys1.jpg" alt="surveys" class="surveys__img">
+                                        <div class="surveys__about">
+                                             <img src="img/aye.png" alt="" class="surveys__about__img">
+                                             <span class="surveys__about__text">845</span>
+                                             <img src="img/mess.png" alt="" class="surveys__about__img">
+                                             <span class="surveys__about__text">34</span>
+                                        </div>
+                                   </div>
+                                   <h3 class="surveys__title">
+                                        «Шальные годы» Монпарнаса
+                                   </h3>
+                                   <p class="surveys__text">
+                                        В Музее изобразительных искусств имени Пушкина с 29 сентября
+                                        по 29 ноября проходит выставка «Шальные годы Монпарнаса»
+                                   </p>
+                              </a>
+                              <a href="#" class="col-sm-6 surveys__item">
+                                   <div class="surveys__img-box">
+                                        <img src="img/surveys2.jpg" alt="surveys" class="surveys__img">
+                                        <div class="surveys__about">
+                                             <img src="img/aye.png" alt="" class="surveys__about__img">
+                                             <span class="surveys__about__text">845</span>
+                                             <img src="img/mess.png" alt="" class="surveys__about__img">
+                                             <span class="surveys__about__text">34</span>
+                                        </div>
+                                   </div>
+                                   <h3 class="surveys__title">
+                                        Анатомия за 30 секунд
+                                   </h3>
+                                   <p class="surveys__text">
+                                        Сейчас, когда мир открыт нараспашку для человека
+                                        и его познавательных изысканий, интерес
+                                        к научно-популярной литературе заметно вырос
+                                   </p>
+                              </a>
+                              <a href="#" class="col-sm-6 surveys__item">
+                                   <div class="surveys__img-box">
+                                        <img src="img/surveys3.jpg" alt="surveys" class="surveys__img">
+                                        <div class="surveys__about">
+                                             <img src="img/aye.png" alt="" class="surveys__about__img">
+                                             <span class="surveys__about__text">845</span>
+                                             <img src="img/mess.png" alt="" class="surveys__about__img">
+                                             <span class="surveys__about__text">34</span>
+                                        </div>
+                                   </div>
+                                   <h3 class="surveys__title">
+                                        Русские балетные сезоны
+                                   </h3>
+                                   <p class="surveys__text">
+                                        В Новом Иерусалиме стартовал необычный
+                                        культурно-развлекательный спектакль, который покажут в новом
+                                        театре
+                                   </p>
+                              </a>
+                              <a href="#" class="col-sm-6 surveys__item">
+                                   <div class="surveys__img-box">
+                                        <img src="img/surveys4.jpg" alt="surveys" class="surveys__img">
+                                        <div class="surveys__about">
+                                             <img src="img/aye.png" alt="" class="surveys__about__img">
+                                             <span class="surveys__about__text">845</span>
+                                             <img src="img/mess.png" alt="" class="surveys__about__img">
+                                             <span class="surveys__about__text">34</span>
+                                        </div>
+                                   </div>
+                                   <h3 class="surveys__title">
+                                        Сферические чудаки
+                                   </h3>
+                                   <p class="surveys__text">
+                                        Корреспондентам «Культурного обозревателя» посчастливилось
+                                        побывать в театре «Сфера» на премьере спектакля «Чудаки и
+                                        зануды»
+                                   </p>
+                              </a>
+                         </article>
+                         <article class="row">
+                              <div class=" col-sm-12 video__bottom"
+                                   style="background:url(img/balet.jpg)no-repeat center center/cover ;">
+                                   <h3 class="video__bottom__title--darck video__bottom__title">
+                                        Ох, уж этот балет
+                                   </h3>
+                                   <button class="video__bottom__btn video__bottom__btn--dark">
+                                        Смотреть
+                                   </button>
+                              </div>
+                         </article>
                     </div>
-                    <div class="col-lg-4"></div>
+                    <section class="slider-bottom visible">
+                         <div class="container slider-bottom__container">
+                              <div class="swiper-wrapper slider-bottom__wrapper ">
+                                   <div class="swiper-slide slider-bottom__slide ">
+                                        <div class="slider-bottom__wrap"
+                                             style="background: url(img/slid1.png)no-repeat center center/cover;">
+                                             <h2 class=" slider-bottom__title">
+                                                  КАК все успевать
+                                             </h2>
+                                             <button class="slider-bottom__btn">
+                                                  Смотреть
+                                             </button>
+                                        </div>
+                                   </div>
+                                   <div class=" swiper-slide slider-bottom__slide  ">
+                                        <div class="slider-bottom__wrap"
+                                             style="background: url(img/slid2.png)no-repeat center center/cover;">
+                                             <h2 class=" slider-bottom__title">
+                                                  КАК все успевать
+                                             </h2>
+                                             <button class="slider-bottom__btn">
+                                                  Смотреть
+                                             </button>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide slider-bottom__slide ">
+                                        <div class="slider-bottom__wrap"
+                                             style="background: url(img/slid3.png)no-repeat center center/cover;">
+                                             <h2 class=" slider-bottom__title">
+                                                  КАК все успевать
+                                             </h2>
+                                             <button class="slider-bottom__btn">
+                                                  Смотреть
+                                             </button>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide slider-bottom__slide ">
+                                        <div class="slider-bottom__wrap"
+                                             style="background: url(img/slid4.png)no-repeat center center/cover;">
+                                             <h2 class=" slider-bottom__title">
+                                                  КАК все успевать
+                                             </h2>
+                                             <button class="slider-bottom__btn">
+                                                  Смотреть
+                                             </button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <button class="slider-bottom__btn-prev"></button>
+                              <button class="slider-bottom__btn-next"></button>
+                              <div class="slider-bottom-pagination "></div>
+                         </div>
+                    </section>
+                    <article class=" col-sm-4 col-12 article-videos">
+                         <div class="article-video"
+                              style="background: url(img/baloons.jpg)no-repeat center center/cover;">
+                              <h3 class="article-video__title article-video__title--light">
+                                   ВОЗДУШНЫЕ ШАРЫ
+                              </h3>
+                              <button class="article-video__btn article-video__btn--light">
+                                   Смотреть
+                              </button>
+                         </div>
+                         <div class="article-video"
+                              style="background: url(img/photoset.jpg)no-repeat center center/cover;">
+                              <h3 class="article-video__title article-video__title--dark">
+                                   НЕОБЫЧНАЯ ФОТОСЕССИ
+                              </h3>
+                              <button class="article-video__btn article-video__btn--dark">
+                                   Смотреть
+                              </button>
+                         </div>
+                         <div class="article-video" style="background: url(img/berd.jpg)no-repeat center center/cover;">
+                              <h3 class="article-video__title article-video__title--dark">
+                                   Выставка птиц
+                              </h3>
+                              <button class="article-video__btn article-video__btn--dark">
+                                   Смотреть
+                              </button>
+                         </div>
+                    </article>
                </div>
           </div>
-     </article>
+     </main>
+
+     <section class="slider-bottom unvisible">
+          <div class="container slider-bottom__container">
+               <div class="swiper-wrapper slider-bottom__wrapper ">
+                    <div class="swiper-slide slider-bottom__slide ">
+                         <div class="slider-bottom__wrap"
+                              style="background: url(img/slid1.png)no-repeat center center/cover;">
+                              <h2 class=" slider-bottom__title">
+                                   КАК все успевать
+                              </h2>
+                              <button class="slider-bottom__btn">
+                                   Смотреть
+                              </button>
+                         </div>
+                    </div>
+                    <div class=" swiper-slide slider-bottom__slide  ">
+                         <div class="slider-bottom__wrap"
+                              style="background: url(img/slid2.png)no-repeat center center/cover;">
+                              <h2 class=" slider-bottom__title">
+                                   КАК все успевать
+                              </h2>
+                              <button class="slider-bottom__btn">
+                                   Смотреть
+                              </button>
+                         </div>
+                    </div>
+                    <div class="swiper-slide slider-bottom__slide ">
+                         <div class="slider-bottom__wrap"
+                              style="background: url(img/slid3.png)no-repeat center center/cover;">
+                              <h2 class=" slider-bottom__title">
+                                   КАК все успевать
+                              </h2>
+                              <button class="slider-bottom__btn">
+                                   Смотреть
+                              </button>
+                         </div>
+                    </div>
+                    <div class="swiper-slide slider-bottom__slide ">
+                         <div class="slider-bottom__wrap"
+                              style="background: url(img/slid4.png)no-repeat center center/cover;">
+                              <h2 class=" slider-bottom__title">
+                                   КАК все успевать
+                              </h2>
+                              <button class="slider-bottom__btn">
+                                   Смотреть
+                              </button>
+                         </div>
+                    </div>
+               </div>
+               <button class="slider-bottom__btn-prev"></button>
+               <button class="slider-bottom__btn-next"></button>
+               <div class="slider-bottom-pagination "></div>
+          </div>
+     </section>
+     <footer class="footer">
+          <div class="container">
+               <h1 class="footer__title">Новости культуры</h1>
+               <nav class="footer__nav">
+                    <ul class="footer__list">
+                         <li class="footer__item"><a href="#" class="footer__link">новости</a></li>
+                         <li class="footer__item"><a href="#" class="footer__link">обзоры</a></li>
+                         <li class="footer__item"><a href="#" class="footer__link">музыка</a></li>
+                         <li class="footer__item"><a href="#" class="footer__link">архитектура</a></li>
+                         <li class="footer__item"><a href="#" class="footer__link">кино</a></li>
+                         <li class="footer__item"><a href="#" class="footer__link">театр</a></li>
+                         <li class="footer__item"><a href="#" class="footer__link">литература</a></li>
+                         <li class="footer__item"><a href="#" class="footer__link">религия</a></li>
+                         <li class="footer__item"><a href="#" class="footer__link">живопись</a></li>
+                    </ul>
+               </nav>
+          </div>
+     </footer>
      <!-- swiper -->
      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
      <!-- main.js -->

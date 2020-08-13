@@ -1,0 +1,103 @@
+.surveys{
+     padding-bottom: 25px;
+     
+     &__item{
+          margin-bottom: 2.3em;
+     }
+     &__item:hover .surveys__img-box::after{
+          opacity: 1;
+     }
+     &__item:hover .surveys__about{
+          opacity: 1;
+     }
+     &__item:hover .surveys__title{
+          color:$btn-color;
+     }
+     &__img-box{
+          width: 100%;
+          object-fit: cover;
+          margin-bottom: 1.25em;
+          position: relative;
+          &::after{
+               opacity: 0;
+               position: absolute;
+               content:"";
+               width: 100%;
+               top: 0;
+               left: 0;
+               height: 100%;
+               background:rgba(21, 21, 30, 0.5) url(../../img/flag.png)no-repeat top 0.5em right 0.5em;
+               transition:opacity .3s ;
+          }
+     }
+     &__img{
+          width: 100%;
+          object-fit: cover;
+     }
+     &__about {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          bottom: 1em;
+          z-index: 9999;
+          opacity: 0;
+          transition: opacity .3s;
+     }
+     &__about__img {
+          margin-left: 1.18em;
+          width: 1.375em;
+          height: 0.875em;
+     }
+     &__about__text {
+          @include font(400,0.875rem, 1.5em,$font-family);
+          color: #FFFFFF;
+          opacity: 0.4;
+     }
+     &__title{
+          @include font(900,1.437rem, 1.347em,$bold-family);
+          margin-bottom: 0.47em;
+          transition: color .3s;
+          color:$black;
+     }
+     &__text{
+          @include font(400,0.875rem, 1.5em,$font-family);
+          color:$black;
+     }
+}
+@media(max-width:540px){
+     .surveys{
+          padding-bottom: 20px;
+          
+          &__item{
+               margin-bottom: 30px;
+          }
+          &__img-box{
+               width: 100%;
+               height: 203px;
+               margin-bottom:15px;
+          }
+          &__img{
+               height: 203px;
+          }
+          &__about {
+               bottom: 1em;
+               z-index: 9999;
+               opacity: 0;
+               transition: opacity .3s;
+          }
+          &__about__img {
+               display: none;
+
+          }
+          &__about__text {
+               display: none;
+          }
+          &__title{
+               @include font(900,23px, 31px,$bold-family);
+               margin-bottom: 10px;
+          }
+          &__text{
+               @include font(400,14px, 1.5em,$font-family);
+          }
+     }
+}

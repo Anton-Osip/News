@@ -1,0 +1,142 @@
+.slider-bottom {
+     overflow: hidden;
+     padding-bottom: 6.93em;
+     &-pagination{
+          display: none;
+     }
+     &__container{
+     position: relative;
+     }
+     &__wrapper{
+     }
+     &__slide{
+          transition: transform .3s;
+     }
+     &__slide:hover{
+          transform: scale(1.2);
+     }
+     &__slide:hover .slider-bottom__title{
+          opacity: 1;
+     }     &__slide:hover .slider-bottom__btn{
+          opacity: 1;
+     }
+     &__wrap{
+          width: 100%;
+          min-height: 6.68em;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+     }
+     &__title{
+          text-align: center;
+          text-transform: uppercase;
+          color:$white;
+          @include font(900,1rem, 1.18em,$font-family);
+          letter-spacing: 0.0125em;
+          margin-bottom: 1em;
+          opacity: 0;
+     }
+     &__btn {
+          @include font(500,0.625rem, 1.2em,$font-family);
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          background: rgba(0, 0, 0, 0.3);
+          border: 1px solid #FFFFFF;
+          padding: 0.8em 1.8em;
+          outline: none;
+          transition:background .3s,
+          transform .3s;
+          opacity: 0;
+     }
+     &__btn:hover {
+          background: $btn-color;
+     }
+     &__btn:active{
+          transform: scale(0.95);
+     }
+     &__btn-prev,
+     &__btn-next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 44px;
+          height: 44px;
+          background: #FFFFFF;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+          border:1px solid $btn-color;
+          outline: none;
+          z-index: 9999;
+          transition:background-color .3s ;
+     }
+     &__btn-prev:hover,
+     &__btn-next:hover {
+          background-color: #fff;
+          border:1px solid $btn-hover;
+     }
+
+     &__btn-prev {
+          left: -15px;
+          background: url(../../img/arrow-left.png)no-repeat center center  ;
+     }
+     &__btn-next {
+          right: -15px;
+          background: url(../../img/arrow-right.png)no-repeat center center;
+     }
+}
+.unvisible{
+     display: block;   
+}
+.visible{
+     display: none;
+}
+@media(max-width:540px){
+     .slider-bottom {
+          padding-bottom: 0;
+          margin-bottom: 50px;
+          width: 100%;
+          min-height: 146px;
+          &__wrap{
+               min-height: 146px;
+          }
+          &__slide:hover{
+               transform: scale(1);
+          }
+          &__title{
+               @include font(900,16px, 19px,$font-family);
+               letter-spacing:2px;
+               margin-bottom: 16px;
+               opacity: 1;
+          }
+          &__btn {
+               @include font(500,10px, 12px,$font-family);
+               letter-spacing: 2px;
+               padding: 7px 18px;
+               opacity: 1;
+          }
+          &__btn-prev,
+          &__btn-next {
+               display: none;
+          }
+          &-pagination{
+               margin-top: 15px;
+               display: block;
+               text-align: center;
+               & .swiper-pagination-bullet{
+                    width:10px;
+                    height: 10px;
+                    background: rgba(0, 0, 0, 0.3);
+               }
+               & .swiper-pagination-bullet-active{
+                    background: #000000;
+               }
+          }
+     }
+     .visible{
+          display: block;
+     }
+     .unvisible{
+          display: none;   
+     }
+}
