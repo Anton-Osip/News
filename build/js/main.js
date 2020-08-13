@@ -44,7 +44,8 @@ var sliderBottom = new Swiper('.slider-bottom__container', {
 let menu = document.querySelector('.menu');
 let cross = document.querySelector('.header__link--cross');
 let headerList = document.querySelector('.header__list');
-
+let headerLink = document.querySelectorAll('.header__link');
+console.log(headerLink);
 
 menu.addEventListener('click', () => {
      headerList.classList.add('header__list__is-open');
@@ -52,3 +53,9 @@ menu.addEventListener('click', () => {
 cross.addEventListener('click', () => {
      headerList.classList.remove('header__list__is-open');
 })
+
+for (let elem of headerLink) {
+     elem.addEventListener('click', () => {
+          headerList.classList.remove('header__list__is-open');
+     })
+}

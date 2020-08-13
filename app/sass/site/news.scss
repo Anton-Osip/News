@@ -77,7 +77,8 @@
      }
      &__img{
           object-fit: cover;
-          width: 100%;
+          width:7.9em;
+          height: 5.6em;
      }
      &__title{
           @include font(900,0.875rem, 1.35em,$bold-family);

@@ -61,6 +61,7 @@
      justify-content: space-around;
      padding: 0 2em;
      min-height: 11em;
+     margin: 0 15px;
      &__title{
           @include font(500,1.875rem, 1.3em,$font-family);
           letter-spacing: 0.06em;
@@ -123,7 +124,7 @@
           }
      }
      .video__bottom {
-          margin-bottom: 50px;
+          margin:0 0 50px;
           flex-direction: column;
           padding: 0 10px;
           align-items: center;
